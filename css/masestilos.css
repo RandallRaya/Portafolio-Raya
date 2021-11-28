@@ -1,0 +1,438 @@
+@charset "UTF-8";
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: agency_regular;
+  src: url("/font/agency_regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: agency_bold;
+  src: url("/font/agency_bold.ttf") format("truetype");
+}
+/*VARIABLES*/
+:root {
+  /*TIPOGRAFIAS*/
+  --font_agency: agency_regular;
+  src: url("/font/agency_regular.ttf") format("truetype");
+  --font_agency_bold: agency_bold;
+  src: url("/font/agency_bold.ttf") format("truetype");
+  --font_bebas: "Bebas Neue", cursive;
+  /*COLORES*/
+  --white: #ffffff;
+  --yellow: #ffce00;
+}
+
+/*********************************************************** COOKIES *****************************************************************/
+.aviso-cookies {
+  display: none;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-left: 78%;
+  width: calc(100% - 40px);
+  max-width: 300px;
+  line-height: 150%;
+  border-radius: 10px;
+  position: fixed;
+  top: 59%;
+  left: 1%;
+  z-index: 100;
+  padding-top: 25px;
+  box-shadow: 0px 2px 20px 1px rgba(222, 222, 222, 0.25);
+  font-family: var(--font_bebas);
+  text-align: center;
+}
+
+.aviso-cookies.activo {
+  display: block;
+}
+
+/*
+.galleta
+{
+    max-width: 100px;
+    position: absolute;
+    top:-50px;
+    left: calc(50% - 50px);
+}
+*/
+.aviso-cookies .titulo, .aviso-cookies .parrafo {
+  margin-bottom: 15px;
+}
+
+#btn-aceptar-cookies {
+  width: 100%;
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+#btn-aceptar-cookies:hover {
+  background-color: #F6A21D;
+  color: black;
+}
+
+.enlace {
+  color: #242424;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.enlace:hover {
+  color: #F6A21D;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+#fondo-aviso-cookies {
+  display: none;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#fondo-aviso-cookies.activo {
+  display: block;
+}
+
+/*************************************************** IMAGEN DE FONDO GRANDE **********************************************************/
+body {
+  overflow-x: hidden;
+  background-color: black;
+  background-image: url(../img/fondo/img-fondo.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-attachment: fixed;
+}
+
+/************************************************************* BARRA INICIO **********************************************************/
+.navbar {
+  z-index: 98;
+}
+
+.navbar-brand {
+  padding: 0%;
+  margin-left: 10%;
+}
+
+.navbar-nav {
+  font-family: var(--font_bebas);
+  font-size: 2rem;
+  color: var(--white);
+  flex-grow: 0;
+}
+
+.inicio {
+  color: var(--yellow);
+}
+
+#nav-proyectos {
+  color: var(--white);
+}
+
+#nav-proyectos:hover {
+  color: var(--yellow);
+}
+
+#nav-contacto {
+  color: var(--white);
+}
+
+#nav-contacto:hover {
+  color: var(--yellow);
+}
+
+#nav-mascont {
+  color: var(--white);
+}
+
+#nav-mascont:hover {
+  color: var(--yellow);
+}
+
+/********************************************************** BOTONES SLIDER **********************************************************/
+.carousel-caption {
+  margin-bottom: 10%;
+  margin-left: -47%;
+  font-size: 50%;
+}
+
+.texto-nombre {
+  margin-left: 5%;
+}
+
+.carousel-inner {
+  font-family: var(--font_agency);
+  /*
+  font-size: 4rem;*/
+}
+
+.carousel-control-prev {
+  margin-left: 8%;
+  margin-top: 25%;
+}
+
+.carousel-control-next {
+  margin-right: 60%;
+  margin-top: 25%;
+}
+
+/*
+.carousel-control-prev
+{
+    margin-left: 10%;
+    //margin-top: 25%;
+}
+
+.carousel-control-next
+{
+    margin-right: 9%;
+    //margin-top: 25%;
+}
+*/
+/*********************************************************** BARRA DE REDES SOCIALES ***********************************************************/
+.barra {
+  display: inline-block center;
+  background-color: white;
+  padding: 5% 10%;
+  padding-left: 23%;
+  /*
+  	#img-instagram
+  	{
+  		margin-left: 250px;
+  	}
+
+      #img-twitter
+  	{
+  		margin-left: 200px;
+  	}
+
+      #img-youtube
+  	{
+  		margin-left: 200px;
+  	}*/
+}
+
+/*************************************************** SECCIÓN SOBRE MI *******************************************************/
+.texto-01-titulo {
+  font-family: agency_regular;
+  text-align: left;
+  float: left;
+  width: 15%;
+  padding-left: 2.5%;
+  padding-top: 0.5%;
+  margin-top: 180px;
+  margin-left: 190px;
+  font-size: 40px;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+}
+
+.texto {
+  font-family: agency_regular;
+  text-align: left;
+  float: left;
+  width: 40%;
+  margin-top: 250px;
+  margin-left: -15%;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: justify;
+}
+
+#detalles {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 2.5;
+}
+
+.imgsobmi {
+  background-image: url(../img/fondo/sombre_mi.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 90%;
+  background-size: 420px;
+  height: 1000px;
+}
+
+/*********************************************************** BOTON SABER MAS SOBRE MI ***********************************************************/
+.botsobremi {
+  width: 25%;
+  border: none;
+  color: #ffffff;
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 75%;
+  transition-duration: 0s;
+  border: 1px solid #ffffff;
+}
+.botsobremi #leermas {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.botsobremi:hover {
+  border: 1px solid #ffce00;
+  text-decoration: none;
+  color: #ffce00;
+}
+.botsobremi:hover #leermas {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffce00;
+  text-decoration: none;
+}
+
+/*************************************************** ALGUNOS DE LOS PROYECTOS *******************************************************/
+.algproyectos {
+  background-color: #ffffff;
+  width: 100%;
+  height: 870px;
+  padding: 10% 10%;
+}
+
+#titulo-proyectos {
+  width: 25%;
+  height: 12%;
+  font-family: var(--font_agency);
+  color: #000000;
+  margin-top: -25px;
+  margin-left: 5px;
+  text-decoration: none;
+  font-size: 32px;
+  border: 2px solid #000000;
+}
+
+.img-inferior {
+  margin-top: -80px;
+}
+
+/*
+.lupa
+{  
+    opacity: 0%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: -50%;
+}
+*/
+#pro01:hover {
+  transform: scale(1.02);
+  transition: all 300ms ease-in;
+}
+
+/*
+#pro01:hover .lupa{
+    transform: scale(1.02);
+    transition: all 300ms ease-in; 
+    opacity: 100%;
+}
+*/
+#pro02:hover {
+  transform: scale(1.02);
+  transition: all 300ms ease-in;
+}
+
+/************************************************************** BOTON LEER MAS ****************************************************************/
+.bot-descumas {
+  width: 13%;
+  border: none;
+  color: #000000;
+  padding: 16px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 14px;
+  padding-left: 2%;
+  margin-top: -50px;
+  margin-left: 87%;
+  transition-duration: 0s;
+  border: 1px solid #000000;
+}
+.bot-descumas #masinfo {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #000000;
+  text-decoration: none;
+}
+
+.bot-descumas:hover {
+  border: 1px solid #ffce00;
+  text-decoration: none;
+  color: #ffce00;
+}
+.bot-descumas:hover #masinfo {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffce00;
+  text-decoration: none;
+}
+
+/************************************************************* BARRA INFOR INFERIOR **************************************************************/
+.barinferior {
+  background-color: #000000;
+  width: 100%;
+  /*height: 100%;*/
+  height: 22vh;
+}
+
+#logo-inferior {
+  display: inline-block;
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 80px;
+  padding: 0;
+}
+
+#img-instagram-inf {
+  margin-left: -10px;
+  margin-bottom: 12px;
+}
+
+#img-twitter-inf {
+  margin-left: -8px;
+  margin-bottom: 12px;
+}
+
+#img-youtube-inf {
+  margin-left: -5px;
+  margin-bottom: 12px;
+}
+
+.collapsenavbar-collapse {
+  margin-left: 10%;
+}
+
+.datos-barra-inf {
+  font-family: var(--font_bebas);
+  color: var(--white);
+  flex-grow: 0;
+}
+
+#descargas {
+  font: var(--font_bebas);
+  color: var(--white);
+}
+
+#descargas:hover {
+  color: var(--yellow);
+}

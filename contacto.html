@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Contacto | Raya</title>
+        <link rel="icon" href="img/logotipos/barra_navegador/Logotipo_03.ico" type="image/ico" sizes="16x16">
+
+        <meta name="author" content="Randall Ventura Raya">
+        <meta name="description" content="Prototipo para Portafolio Personal">
+        <meta name="keywords" content="Portfolio, fotografía, Urbanidad, Blanco y Negro, Arquitectura, Exploración, Video, Animación, Vectorizado">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!----------------------------------------------------Enlaces Bootstrap----------------------------------------------------------------->
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+        <!----------------------------------------------------Enlaces para tipografías---------------------------------------------------------->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/oft7nkx.css">
+        <link rel="stylesheet" href="https://use.typekit.net/oft7nkx.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Extra light-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">   
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Extra light Italic-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
+
+
+
+
+        
+        <link rel="stylesheet" href="css/contacto.css">
+
+        
+    </head>
+
+
+    <body>
+    
+        <!-- Desactivar clic derecho del mouse -->
+        <body oncontextmenu="return false" onkeydown="return false">
+    
+
+
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-black"> 
+               
+            <div class="row container-fluid ms-5 p-2">
+                <a class="col-sm-2 col-lg-6 navbar-brand " href="index.html">
+                    <img src="img/logotipos/pagina/LOGOTIPO-03.png" alt="img-logo" width="110px">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                  
+                <div class="col-sm-10 col-lg-6 collapse navbar-collapse list-inline-item" id="mynavbar">
+                    <form class="d-flex justify-content-end">
+                        <ul class="navbar-nav me-auto" style=" font-size: 20px;">
+                            <li class="nav-item">
+                                <a class="nav-link inicio" href="index.html"  id="nav-inicio">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyectos.html" id="nav-proyectos">PROYECTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: #ffce00;" id="nav-contacto">CONTACTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mascontenido.html" id="nav-mascont">MÁS CONTENIDO</a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        
+
+
+
+        <nav class="img-formulario" style="margin-top: 15%; margin-bottom: 20%;">
+            <div class="row">
+                <div class ="col-lg-6 pt-3">
+                    <h1 class="titulo-contacto" style="margin-left: 40%; margin-bottom: 5%">
+                        Contáctamte
+                    </h1>
+                    <p class="infor-contacto" style="margin-left: 40%; text-align: justify; font-family: var(--font_Source-ExtraLight); width: 50%;">
+                        Muéstrame el camino sobre tu nueva historia que deseas contar. 
+                        Si deseas platicarme sobre ello y llegar a obtener un resultado final.
+                    </p>
+
+                    <p class="manus-contaco" style="margin-left: 40%; font-family: var(--font_Source-LightItalic);">
+                        Estaré encantado de escucharte.
+                    </p>
+
+                    <img src="img/contacto/contacto.jpg" alt="img-contacto" width="50%" style="margin-left: 40%;">
+                </div>
+
+
+
+                <!--Formaulario-->
+                <div class ="col-lg-6 pt-3" style="color: black; margin-top: 12%; width: 30%; text-align: justify;">
+                    <form id="Formulario" style="font-size: 0.8rem;">
+
+                        <div class="my-3">
+                            <label for="name" style="margin-bottom: 5px; font-family:var(--font_Source-Light);" id="nomb">Nombre *</label>
+                            <input type="text" name="name" class="form-control" id="Nombre"  required >
+                        </div>
+
+                    </br>
+
+                        <div class="my-3" >
+                          <label for="email" style="margin-bottom: 5px; font-family:var(--font_Source-Light);">Correo electrónico *</label>
+                          <input type="email" name="email" class="form-control" id="Correo" required>
+                        </div>
+
+                    </br>
+
+                        <div class="mb-3">
+                          <label for="tel" style="margin-bottom: 5px; font-family:var(--font_Source-Light);">Número de teléfono *</label>
+                          <input type="number" name="phone" class="form-control" id="Tel" required>
+                        </div>
+
+                    </br>
+
+                        <div class="mb-3">
+                            <label for="adress" style="margin-bottom: 5px; font-family:var(--font_Source-Light);">Asunto *</label>
+                            <input type="text" name="message" class="form-control" id="Asunto" required>
+                          </div>
+
+                    </br>
+
+                        <div class="mb-3">
+                            <label for="message" style="margin-bottom: 5px; font-family:var(--font_Source-Light);">Mensaje *</label>
+                            <textarea name="message" class="form-control" required="" id="Mensaje" required></textarea>
+                          </div>
+
+                    </br>
+
+                        <button type="submit" class="mibotn bg-black" name="enviar">ENVIAR</button>
+                      </form>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <footer class="barinferior" id="seccion4">
+            <div class="row">
+    
+                <div class="col-lg-4" id="logo-inferior" style="margin-left: 8%;">
+    
+                    <a href="index.html">
+                        <img src="img/logotipos/pagina/LOGOTIPO-03.png" alt="img-logo" width="80px">
+                    </a>
+                    
+                    <a href="https://www.instagram.com/randallraya/" target="_blank">
+                        <img src="img/logotipos/redes/negativo/instagram.png" id="img-instagram-inf" width="35vh">
+                    </a>
+    
+                    <img src="img/logotipos/redes/negativo/twitter.png" id="img-twitter-inf" width="35vh">
+    
+                    <a href="https://www.youtube.com/channel/UC4cF26bObtI2gMqMfUxmXWQ" target="_blank">
+                        <img src="img/logotipos/redes/negativo/youtube.png" id="img-youtube-inf" width="35pvh">
+                    </a>
+    
+                </div>
+    
+                <div class="col-lg-4" id="datos-barra-inf" style="text-align: center; color: white; font-size: 0.7rem; margin-top: -2.5%; margin-left: 34%;" >
+                    <p>
+                        Raya        |       2021
+                    </p>
+                </div>
+    
+                <div class="col-lg-4" id="descargas" style="color: white; font-size: 0.7rem; margin-top: -2.6%; margin-left: 83%; text-decoration: underline;">
+                    <a class="link-download" href="download.html" id="descargas" target="_blank">
+                        Descargar Material
+                    </a>   
+                </div>
+                
+            </div>
+        </footer>
+
+
+<!------------------------------------------------------- SCRIPS FORMULARIO --------------------------------------------------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#Formulario").submit(function(e) {
+
+                    e.preventDefault();
+
+                    const nombre = $("#Nombre").val();
+                    const correo = $("#Correo").val();
+                    const tel = $("#Tel").val();
+                    const asunto = $("#Asunto").val();
+                    const mensaje = $("#Mensaje").val();
+                    
+
+                    const referencia = "mailto:randall.raya.ventura@gmail.com?subject=INFORMACIÓN%20DE%20PROYECTO&body=______________________________"+"%0D%0A"+"%0D%0ANombre*%20"+nombre+"%0D%0ACorreo*%20"+correo+"%0D%0ATeléfono*%20"
+                    +tel+"%0D%0AAsunto*%20"+asunto+"%0D%0AMensaje*%20"+mensaje+"%0D%0A______________________________";
+                    const enlace = document.createElement("a");
+                    enlace.href = referencia;
+                    enlace.click(); 
+                    
+                });
+            });     
+        </script>
+
+        
+
+    </body>
+
+</html>

@@ -1,0 +1,161 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: agency_regular;
+  src: url("/font/agency_regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: agency_bold;
+  src: url("/font/agency_bold.ttf") format("truetype");
+}
+/*VARIABLES*/
+:root {
+  /*TIPOGRAFIAS*/
+  --font_agency: agency_regular;
+  src: url("/font/agency_regular.ttf") format("truetype");
+  --font_agency_bold: agency_bold;
+  src: url("/font/agency_bold.ttf") format("truetype");
+  --font_bebas: "Bebas Neue", cursive;
+  --font_Source: source-sans-pro,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  /*COLORES*/
+  --white: #ffffff;
+  --yellow: #ffce00;
+  --black: #000000;
+}
+
+/*************************************************** IMAGEN DE FONDO GRANDE **********************************************************/
+body {
+  overflow-x: hidden;
+  background-color: #ffffff;
+  background-image: url(../img/fondo/info_03.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+/************************************************************* BARRA INICIO **********************************************************/
+.navbar-brand {
+  padding: 0%;
+  margin-left: 10%;
+}
+
+.navbar-nav {
+  font-family: var(--font_bebas);
+  font-size: 2rem;
+  color: var(--white);
+  flex-grow: 0;
+}
+
+.inicio {
+  color: var(--yellow);
+}
+
+#nav-inicio {
+  color: var(--black);
+}
+
+#nav-inicio:hover {
+  color: var(--yellow);
+}
+
+#nav-proyectos {
+  color: var(--black);
+}
+
+#nav-proyectos:hover {
+  color: var(--yellow);
+}
+
+#nav-contacto {
+  color: var(--black);
+}
+
+#nav-contacto:hover {
+  color: var(--yellow);
+}
+
+#nav-mascont {
+  color: var(--black);
+}
+
+#nav-mascont:hover {
+  color: var(--yellow);
+}
+
+/********************************************************************* CONTENIDO **************************************************************/
+.info-sobremi {
+  background-color: #ffffff;
+  width: 142%;
+  height: 100%;
+  position: relative;
+  top: -145px;
+  text-align: justify;
+}
+
+h1 {
+  padding-top: 5%;
+  font-family: var(--font_bebas);
+  margin-left: 70vh;
+  margin-top: 0%;
+}
+
+h2 {
+  font-family: var(--font_Source);
+  margin-left: 18.2%;
+}
+
+.texto-sobremi {
+  font-family: var(--font_agency);
+  line-height: 2.5;
+}
+
+/************************************************************* BARRA INFOR INFERIOR **************************************************************/
+.barinferior {
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  margin-top: -160px;
+}
+
+#logo-inferior {
+  display: inline-block;
+  width: 100%;
+  margin-top: 45px;
+  margin-left: 80px;
+  padding: 0;
+}
+
+#img-instagram-inf {
+  margin-left: -10px;
+  margin-bottom: 12px;
+}
+
+#img-twitter-inf {
+  margin-left: -8px;
+  margin-bottom: 12px;
+}
+
+#img-youtube-inf {
+  margin-left: -5px;
+  margin-bottom: 12px;
+}
+
+.collapsenavbar-collapse {
+  margin-left: 10%;
+}
+
+#descargas {
+  font: var(--font_bebas);
+  color: var(--white);
+}
+
+#descargas:hover {
+  color: var(--yellow);
+}

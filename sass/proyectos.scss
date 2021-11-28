@@ -1,0 +1,283 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+	font-family: agency_regular;
+	src: url("/font/agency_regular.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: agency_bold;
+    src: url("/font/agency_bold.ttf") format('truetype');
+}
+
+
+
+/*VARIABLES*/
+:root
+{
+    /*TIPOGRAFIAS*/
+    --font_agency: agency_regular;
+    src: url("/font/agency_regular.ttf") format('truetype');
+
+    --font_agency_bold: agency_bold;
+    src: url("/font/agency_bold.ttf") format('truetype');
+
+    --font_bebas: 'Bebas Neue', cursive;
+
+
+
+    /*COLORES*/
+    --white: #ffffff;
+    --yellow: #ffce00;
+
+}
+
+
+
+/*************************************************** IMAGEN DE FONDO GRANDE **********************************************************/
+body
+{
+    overflow-x: hidden;
+
+    background-color: #ffffff;
+}
+
+
+
+/************************************************************* BARRA INICIO **********************************************************/
+
+
+.navbar-brand
+{
+    padding: 0%;
+    margin-left: 10%;
+}
+
+.navbar-nav
+{
+    font-family: var(--font_bebas) ;
+    font-size: 2rem;
+    color: var(--white);
+    flex-grow: 0;
+}
+
+.inicio
+{
+    color:var(--yellow)
+}
+
+
+
+
+
+
+#nav-inicio
+{
+    color: var(--white)
+}
+
+#nav-inicio:hover
+{
+    color: var(--yellow)
+}
+
+
+
+#nav-contacto
+{
+    color: var(--white)
+}
+
+#nav-contacto:hover
+{
+    color: var(--yellow)
+}
+
+
+
+#nav-mascont
+{
+    color: var(--white)
+}
+
+#nav-mascont:hover
+{
+    color: var(--yellow)
+}
+
+
+
+
+
+
+/***********************************************************PROYECTOS***************************************************************************/
+.galeria2
+{
+    margin-top: 5%;
+}
+
+
+
+.modal-content{
+    background-color: #ffffff;
+
+}
+
+
+/*********************************************************** Galeria ***************************************************************************/
+
+#pro01:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro02:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro03:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro04:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro05:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro06:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro07:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro01:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro08:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro09:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro10:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro11:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro12:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro13:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro14:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro15:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro16:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+#pro17:hover
+{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+}
+
+
+
+
+
+
+
+/************************************************************* BARRA INFOR INFERIOR **************************************************************/
+.barinferior
+{
+    background-color:#000000;	
+	width: 100%;
+	height: 120px;
+}
+
+
+#logo-inferior
+{
+	display: inline-block;		    
+	width: 100%;
+
+	margin-top: 45px;
+    margin-left: 80px;
+	padding: 0;
+}
+
+#img-instagram-inf
+{
+	margin-left: -10px;
+    margin-bottom: 12px;
+}
+
+#img-twitter-inf
+{
+	margin-left: -8px;
+    margin-bottom: 12px;
+}
+
+#img-youtube-inf
+{
+	margin-left: -5px;
+    margin-bottom: 12px;
+}
+
+
+.collapsenavbar-collapse
+{
+    margin-left: 10%;
+} 
+
+#descargas
+{
+    font: var(--font_bebas);
+    color: var(--white);
+}
+
+#descargas:hover
+{
+    color: var(--yellow);
+}
